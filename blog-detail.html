@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog & Wawasan AI - OmpungAI</title>
-    
-    <!-- Bootstrap 5 CSS (Wajib) -->
+    <title>Detail Blog AI - OmpungAI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons (Wajib) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Sedikit custom CSS jika diperlukan (opsional) -->
-    <style>
-        .card-img-top { height: 200px; object-fit: cover; }
-        body { background-color: #f8f9fa; }
-    </style>
 </head>
 <body>
 
-    <!-- NAVBAR BOOTSTRAP -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-primary">AI</span></a>
+            <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-success">AI</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,131 +25,46 @@
         </div>
     </nav>
 
-    <!-- HEADER / HERO BLOG -->
-    <header class="bg-primary text-white text-center py-5 mb-4">
-        <div class="container">
-            <h1 class="fw-bold">Jelajahi Wawasan Seputar AI</h1>
-            <p class="lead">Berita terbaru, tren, dan panduan teknis seputar Artificial Intelligence.</p>
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="blog.html" class="text-decoration-none text-success">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Generative AI</li>
+                    </ol>
+                </nav>
+
+                <h1 class="fw-bold mb-3">Mengapa Large Language Models (LLM) Mengubah Cara Kerja Programmer?</h1> 
+                
+                <div class="d-flex align-items-center mb-4 text-muted">
+                    <span class="me-3"><i class="bi bi-person-circle"></i> Budi Santoso</span>
+                    <span class="me-3"><i class="bi bi-calendar-event"></i> 18 Sep 2026</span>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80" class="img-fluid rounded mb-4 w-100" alt="Generative AI Coding" style="max-height: 400px; object-fit: cover;">
+
+                <div class="fs-5" style="line-height: 1.8;">
+                    <p>Kehadiran Generative AI seperti ChatGPT, GitHub Copilot, dan model bahasa raksasa (LLM) lainnya telah memicu revolusi dalam industri rekayasa perangkat lunak. Alih-alih menggantikan programmer, alat-alat ini justru bertindak sebagai asisten canggih yang membantu mempercepat proses penulisan kode sumber.</p>
+                    <p>Secara tradisional, seorang pengembang menghabiskan banyak waktu untuk mencari sintaks yang tepat. Sekarang, dengan bantuan model AI generatif, programmer cukup memberikan instruksi dalam bahasa manusia, dan AI akan menghasilkan draf kode yang siap digunakan.</p>
+                    
+                    <div class="alert alert-success d-flex align-items-center shadow-sm" role="alert">
+                        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                        <div><strong>Tahukah Anda?</strong> Survei tahun 2026 menunjukkan bahwa 75% programmer menggunakan AI untuk membantu mendeteksi celah keamanan.</div>
+                    </div>
+
+                    <p>Namun, keterampilan baru kini dituntut: <strong>Prompt Engineering</strong>. Ini adalah kemampuan memberikan perintah berkonteks agar AI menghasilkan kode efisien.</p>
+                </div>
+
+            </div>
         </div>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main class="container mb-5">
-        
-        <!-- FILTER KATEGORI (Opsional) -->
-        <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
-            <span class="badge rounded-pill text-bg-primary fs-6 px-3 py-2"><i class="bi bi-funnel"></i> Semua</span>
-            <span class="badge rounded-pill text-bg-light border text-dark fs-6 px-3 py-2">Generative AI</span>
-            <span class="badge rounded-pill text-bg-light border text-dark fs-6 px-3 py-2">Computer Vision</span>
-            <span class="badge rounded-pill text-bg-light border text-dark fs-6 px-3 py-2">Etika AI</span>
-        </div>
-
-        <!-- DAFTAR ARTIKEL (Grid Bootstrap) -->
-        <div class="row g-4">
-            
-            <!-- Artikel 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" class="card-img-top" alt="Generative AI">
-                    <div class="card-body">
-                        <span class="badge text-bg-info text-white mb-2"><i class="bi bi-cpu"></i> Generative AI</span>
-                        <h5 class="card-title fw-bold">
-                            <!-- Link ke halaman detail -->
-                            <a href="blog-detail.html" class="text-decoration-none text-dark stretched-link">Mengapa LLM Mengubah Cara Kerja Programmer?</a>
-                        </h5>
-                        <p class="card-text text-muted">Large Language Models (LLM) bukan sekadar alat bantu, melainkan mitra kolaborasi yang mempercepat siklus pembuatan kode dan debugging.</p>
-                    </div>
-                    <div class="card-footer bg-white border-top-0 pb-3">
-                        <small class="text-muted d-flex justify-content-between">
-                            <span><i class="bi bi-person-circle"></i> Budi Santoso</span>
-                            <span><i class="bi bi-calendar3"></i> 18 Sep 2026</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Artikel 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=600&q=80" class="card-img-top" alt="Computer Vision">
-                    <div class="card-body">
-                        <span class="badge text-bg-success mb-2"><i class="bi bi-eye"></i> Computer Vision</span>
-                        <h5 class="card-title fw-bold">
-                            <a href="#" class="text-decoration-none text-dark stretched-link">Otomasi Industri Manufaktur dengan Deteksi Visual</a>
-                        </h5>
-                        <p class="card-text text-muted">Bagaimana pabrik modern memanfaatkan kamera AI untuk mendeteksi kecacatan produk dalam hitungan milidetik di jalur perakitan.</p>
-                    </div>
-                    <div class="card-footer bg-white border-top-0 pb-3">
-                        <small class="text-muted d-flex justify-content-between">
-                            <span><i class="bi bi-person-circle"></i> Rina Wijaya</span>
-                            <span><i class="bi bi-calendar3"></i> 15 Sep 2026</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Artikel 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=600&q=80" class="card-img-top" alt="Etika AI">
-                    <div class="card-body">
-                        <span class="badge text-bg-warning mb-2"><i class="bi bi-shield-lock"></i> Etika AI</span>
-                        <h5 class="card-title fw-bold">
-                            <a href="#" class="text-decoration-none text-dark stretched-link">Menghindari Bias pada Algoritma Rekrutmen</a>
-                        </h5>
-                        <p class="card-text text-muted">AI dapat mengambil alih seleksi CV, namun kita harus memastikan dataset yang digunakan bebas dari bias gender dan rasial.</p>
-                    </div>
-                    <div class="card-footer bg-white border-top-0 pb-3">
-                        <small class="text-muted d-flex justify-content-between">
-                            <span><i class="bi bi-person-circle"></i> Dr. Andi</span>
-                            <span><i class="bi bi-calendar3"></i> 10 Sep 2026</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Artikel 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" class="card-img-top" alt="Data Analytics">
-                    <div class="card-body">
-                        <span class="badge text-bg-danger mb-2"><i class="bi bi-graph-up"></i> Machine Learning</span>
-                        <h5 class="card-title fw-bold">
-                            <a href="#" class="text-decoration-none text-dark stretched-link">Prediksi Churn Pelanggan dengan Machine Learning</a>
-                        </h5>
-                        <p class="card-text text-muted">Strategi mempertahankan pelanggan dengan membaca pola perilaku dan transaksi mereka menggunakan algoritma prediktif.</p>
-                    </div>
-                    <div class="card-footer bg-white border-top-0 pb-3">
-                        <small class="text-muted d-flex justify-content-between">
-                            <span><i class="bi bi-person-circle"></i> Budi Santoso</span>
-                            <span><i class="bi bi-calendar3"></i> 05 Sep 2026</span>
-                        </small>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- PAGINATION -->
-        <nav aria-label="Page navigation" class="mt-5">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
-            </ul>
-        </nav>
-
     </main>
 
-    <!-- FOOTER BOOTSTRAP -->
-    <footer class="bg-dark text-white text-center py-3 mt-auto">
-        <div class="container">
-            <p class="mb-0">&copy; 2026 OmpungAI. Dibuat menggunakan Bootstrap 5.</p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 OmpungAI.</p>
     </footer>
 
-    <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

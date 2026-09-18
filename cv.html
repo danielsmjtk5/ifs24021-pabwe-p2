@@ -3,43 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Mahasiswa PABWE</title>
-    
-    <!-- Google Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tabler Icons (Webfont) untuk Ikon -->
+    <title>CV - Penulis OmpungAI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
-
-    <!-- Tailwind CSS v4 (Play CDN) -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    
-    <!-- Konfigurasi Tema Tailwind v4 -->
     <style type="text/tailwindcss">
-        @theme {
-            /* Menyesuaikan warna brand khusus */
-            --color-brand-50: #eff6ff;
-            --color-brand-100: #dbeafe;
-            --color-brand-500: #3b82f6;
-            --color-brand-600: #2563eb;
-            --color-brand-900: #1e3a8a;
-            
-            /* Mengganti font bawaan sans dengan Inter */
-            --font-sans: 'Inter', sans-serif;
-        }
+        @theme { --color-brand-600: #14746f; --font-sans: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen py-6 sm:py-12 px-4 sm:px-6">
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen">
 
-    <!-- NAVBAR TAILWIND -->
     <nav class="bg-white shadow-sm border-b border-slate-100 mb-8 sticky top-0 z-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-black tracking-tight text-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-black tracking-tight">
                 Ompung<span class="text-brand-600">AI</span>
             </a>
-            <div class="flex items-center gap-4 sm:gap-6">
+            <div class="flex gap-6">
                 <a href="index.html" class="text-sm font-medium text-slate-500 hover:text-brand-600 transition">Beranda</a>
                 <a href="blog.html" class="text-sm font-medium text-slate-500 hover:text-brand-600 transition">Blog</a>
                 <a href="cv.html" class="text-sm font-bold text-brand-600 border-b-2 border-brand-600 pb-1">CV Penulis</a>
@@ -47,169 +26,35 @@
         </div>
     </nav>
     
-    <!-- MAIN CV CONTAINER (Grid Layout) -->
-    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl shadow-slate-200/50 overflow-hidden border border-slate-100">
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
         <div class="grid grid-cols-1 lg:grid-cols-3">
             
-            <!-- KOLOM KIRI (Sidebar) -->
-            <aside class="bg-slate-50/50 border-r border-slate-100 p-8 lg:p-10 flex flex-col items-center lg:items-start text-center lg:text-left">
-                
-                <!-- Foto Profil -->
-                <div class="relative w-40 h-40 rounded-full border-4 border-white shadow-lg overflow-hidden mb-6">
-                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&q=80" alt="Foto Profil" class="w-full h-full object-cover">
-                </div>
-                
-                <!-- Nama & Role -->
-                <h1 class="text-2xl font-bold text-slate-900 tracking-tight">Alex Sander</h1>
-                <p class="text-brand-600 font-medium mt-1">Aspiring AI Engineer</p>
-                <p class="text-sm text-slate-500 mt-3 leading-relaxed">Mahasiswa yang bersemangat mengintegrasikan kecerdasan buatan dengan pengembangan teknologi web modern.</p>
-
-                <!-- Info Kontak (Stack Vertical dengan space-y) -->
-                <div class="w-full mt-8 space-y-4">
-                    <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Kontak</h2>
-                    
-                    <a href="mailto:alex@example.com" class="flex items-center gap-3 text-sm text-slate-600 hover:text-brand-600 transition group">
-                        <div class="p-2 bg-white rounded-lg border border-slate-200 group-hover:border-brand-200 group-hover:bg-brand-50 transition">
-                            <i class="ti ti-mail text-lg text-slate-400 group-hover:text-brand-600"></i>
-                        </div>
-                        alex@example.com
-                    </a>
-                    
-                    <div class="flex items-center gap-3 text-sm text-slate-600">
-                        <div class="p-2 bg-white rounded-lg border border-slate-200">
-                            <i class="ti ti-phone text-lg text-slate-400"></i>
-                        </div>
-                        +62 812 3456 7890
-                    </div>
-
-                    <div class="flex items-center gap-3 text-sm text-slate-600">
-                        <div class="p-2 bg-white rounded-lg border border-slate-200">
-                            <i class="ti ti-map-pin text-lg text-slate-400"></i>
-                        </div>
-                        Pematangsiantar, Indonesia
-                    </div>
-
-                    <a href="#" class="flex items-center gap-3 text-sm text-slate-600 hover:text-brand-600 transition group">
-                        <div class="p-2 bg-white rounded-lg border border-slate-200 group-hover:border-brand-200 group-hover:bg-brand-50 transition">
-                            <i class="ti ti-brand-github text-lg text-slate-400 group-hover:text-brand-600"></i>
-                        </div>
-                        github.com/alexsander
-                    </a>
-                </div>
-
-                <!-- Keahlian (Chips/Badges) -->
-                <div class="w-full mt-10">
-                    <h2 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Technical Skills</h2>
-                    <div class="flex flex-wrap gap-2 justify-center lg:justify-start">
-                        <span class="px-3 py-1 bg-slate-200/60 text-slate-700 text-xs font-semibold rounded-full border border-slate-200">Python</span>
-                        <span class="px-3 py-1 bg-slate-200/60 text-slate-700 text-xs font-semibold rounded-full border border-slate-200">HTML5 / CSS3</span>
-                        <span class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 text-xs font-semibold rounded-full">Tailwind CSS v4</span>
-                        <span class="px-3 py-1 bg-brand-50 text-brand-600 border border-brand-100 text-xs font-semibold rounded-full">Bootstrap 5</span>
-                        <span class="px-3 py-1 bg-slate-200/60 text-slate-700 text-xs font-semibold rounded-full border border-slate-200">Machine Learning</span>
-                        <span class="px-3 py-1 bg-slate-200/60 text-slate-700 text-xs font-semibold rounded-full border border-slate-200">Git / GitHub</span>
-                    </div>
+            <aside class="bg-slate-50/50 border-r border-slate-100 p-10">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&q=80" class="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-6">
+                <h1 class="text-2xl font-bold text-slate-900">Alex Sander</h1>
+                <p class="text-brand-600 font-medium">AI Engineer</p>
+                <div class="mt-8 space-y-4">
+                    <p class="flex items-center gap-3 text-sm text-slate-600"><i class="ti ti-mail text-lg text-brand-600"></i> alex@ompungai.com</p>
+                    <p class="flex items-center gap-3 text-sm text-slate-600"><i class="ti ti-phone text-lg text-brand-600"></i> +62 812 3456</p>
                 </div>
             </aside>
 
-            <!-- KOLOM KANAN (Main Content) -->
-            <main class="lg:col-span-2 p-8 lg:p-12">
-                
-                <!-- Ringkasan / About -->
+            <main class="lg:col-span-2 p-12">
                 <section class="mb-10">
-                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-brand-100 pb-2 mb-4 inline-flex items-center gap-2">
-                        <i class="ti ti-user-circle text-brand-500"></i> Tentang Saya
-                    </h2>
-                    <p class="text-slate-600 leading-relaxed text-justify">
-                        Saya adalah seorang mahasiswa jurusan Informatika yang memiliki ketertarikan tinggi pada pengembangan website dan penerapan kecerdasan buatan (AI). Saya gemar mengeksplorasi teknologi baru seperti Large Language Models (LLM) dan mengintegrasikannya ke dalam antarmuka web yang interaktif dan responsif.
-                    </p>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-2 mb-4"><i class="ti ti-user-circle text-brand-600"></i> Tentang Saya</h2>
+                    <p class="text-slate-600">Mahasiswa Informatika yang gemar mengeksplorasi teknologi AI dan mengintegrasikannya ke dalam antarmuka web.</p>
                 </section>
-
-                <!-- Pendidikan -->
-                <section class="mb-10">
-                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-brand-100 pb-2 mb-4 inline-flex items-center gap-2">
-                        <i class="ti ti-school text-brand-500"></i> Pendidikan
-                    </h2>
-                    
-                    <div class="space-y-6">
-                        <!-- Item Pendidikan -->
-                        <div class="relative pl-6 before:content-[''] before:absolute before:left-0 before:top-2 before:w-3 before:h-3 before:bg-brand-500 before:rounded-full before:shadow-[0_0_0_4px_#eff6ff]">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
-                                <h3 class="font-bold text-slate-900">Institut Teknologi Del</h3>
-                                <span class="text-sm font-medium text-brand-600 bg-brand-50 px-3 py-1 rounded-full mt-2 sm:mt-0 w-fit">2024 - Sekarang</span>
-                            </div>
-                            <p class="text-slate-700 font-medium">S1 Informatika</p>
-                            <p class="text-sm text-slate-500 mt-1">Fokus pembelajaran pada algoritma, rekayasa perangkat lunak, dan dasar-dasar machine learning.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Pengalaman -->
-                <section class="mb-10">
-                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-brand-100 pb-2 mb-4 inline-flex items-center gap-2">
-                        <i class="ti ti-briefcase text-brand-500"></i> Pengalaman
-                    </h2>
-                    
-                    <div class="space-y-6">
-                        <!-- Item Pengalaman 1 -->
-                        <div class="relative pl-6 border-l-2 border-slate-100">
-                            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300"></div>
-                            <h3 class="font-bold text-slate-900 text-lg">Asisten Laboratorium Pemrograman</h3>
-                            <p class="text-brand-600 text-sm font-medium mb-2">Pusat Inovasi Kampus | Sep 2025 - Sekarang</p>
-                            <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1">
-                                <li>Membantu mahasiswa tingkat pertama dalam memahami konsep dasar pemrograman Python dan HTML/CSS.</li>
-                                <li>Mengelola dan memeriksa lebih dari 40 repositori tugas mingguan via Git.</li>
-                            </ul>
-                        </div>
-
-                        <!-- Item Pengalaman 2 -->
-                        <div class="relative pl-6 border-l-2 border-slate-100">
-                            <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-white border-4 border-slate-300"></div>
-                            <h3 class="font-bold text-slate-900 text-lg">Web Developer Intern</h3>
-                            <p class="text-brand-600 text-sm font-medium mb-2">Tech Solutions Pematangsiantar | Jun 2025 - Ags 2025</p>
-                            <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1">
-                                <li>Merancang ulang antarmuka dashboard klien menggunakan Tailwind CSS, meningkatkan kecepatan load halaman sebesar 30%.</li>
-                                <li>Berkolaborasi dengan tim backend dalam mengkonsumsi REST API untuk fitur analitik data.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Proyek / Portfolio -->
                 <section>
-                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-brand-100 pb-2 mb-4 inline-flex items-center gap-2">
-                        <i class="ti ti-rocket text-brand-500"></i> Portofolio Proyek
-                    </h2>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                        <!-- Kartu Proyek 1 -->
-                        <a href="index.html" class="block p-5 border border-slate-200 rounded-xl hover:border-brand-300 hover:shadow-lg hover:shadow-brand-100/50 transition duration-300 group bg-white">
-                            <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center mb-3 group-hover:scale-110 transition">
-                                <i class="ti ti-device-desktop text-xl"></i>
-                            </div>
-                            <h3 class="font-bold text-slate-900 mb-1 group-hover:text-brand-600 transition">NovaMind AI Landing Page</h3>
-                            <p class="text-sm text-slate-500 mb-3">Website perusahaan jasa AI responsif menggunakan HTML murni, CSS Grid, dan Flexbox.</p>
-                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Lihat Proyek &rarr;</span>
-                        </a>
-
-                        <!-- Kartu Proyek 2 -->
-                        <a href="blog.html" class="block p-5 border border-slate-200 rounded-xl hover:border-brand-300 hover:shadow-lg hover:shadow-brand-100/50 transition duration-300 group bg-white">
-                            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3 group-hover:scale-110 transition">
-                                <i class="ti ti-article text-xl"></i>
-                            </div>
-                            <h3 class="font-bold text-slate-900 mb-1 group-hover:text-emerald-600 transition">Portal Blog AI</h3>
-                            <p class="text-sm text-slate-500 mb-3">Sistem daftar artikel blog dan halamannya yang dibangun menggunakan framework Bootstrap 5.</p>
-                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wide">Lihat Proyek &rarr;</span>
-                        </a>
+                    <h2 class="text-xl font-bold text-slate-900 border-b-2 border-slate-100 pb-2 mb-4"><i class="ti ti-rocket text-brand-600"></i> Portofolio</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="index.html" class="block p-5 border rounded-xl hover:shadow-lg transition"><h3 class="font-bold">Landing Page AI</h3><p class="text-sm text-slate-500">Website HTML murni.</p></a>
+                        <a href="blog.html" class="block p-5 border rounded-xl hover:shadow-lg transition"><h3 class="font-bold">Blog Bootstrap</h3><p class="text-sm text-slate-500">Sistem artikel berita.</p></a>
                     </div>
                 </section>
-
             </main>
         </div>
     </div>
     
-    <footer class="text-center text-slate-400 text-sm mt-10">
-        Dibuat dengan menggunakan Tailwind CSS v4
-    </footer>
-
+    <footer class="text-center text-slate-400 text-sm py-10">Dibuat menggunakan Tailwind CSS v4</footer>
 </body>
 </html>
