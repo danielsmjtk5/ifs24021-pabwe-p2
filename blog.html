@@ -13,7 +13,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-success">AI</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Ditambahkan aria-label -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Buka menu navigasi">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,12 +40,14 @@
             <!-- Artikel 1 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" class="card-img-top" alt="AI">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" class="card-img-top" alt="Ilustrasi Generative AI">
                     <div class="card-body">
-                        <span class="badge text-bg-info text-white mb-2">Generative AI</span>
-                        <h5 class="card-title fw-bold">
+                        <!-- Perbaikan teks badge agar kontras hitam di atas cyan -->
+                        <span class="badge text-bg-info text-dark mb-2">Generative AI</span>
+                        <!-- Perbaikan heading <h5> menjadi <h2> class="h5" -->
+                        <h2 class="card-title h5 fw-bold">
                             <a href="blog-detail.html" class="text-decoration-none text-dark stretched-link">Mengapa LLM Mengubah Cara Kerja Programmer?</a>
-                        </h5>
+                        </h2>
                         <p class="card-text text-muted">LLM mempercepat siklus pembuatan kode.</p>
                     </div>
                 </div>
@@ -53,12 +56,12 @@
             <!-- Artikel 2 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=600&q=80" class="card-img-top" alt="AI">
+                    <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?w=600&q=80" class="card-img-top" alt="Ilustrasi Computer Vision">
                     <div class="card-body">
                         <span class="badge text-bg-success mb-2">Computer Vision</span>
-                        <h5 class="card-title fw-bold">
+                        <h2 class="card-title h5 fw-bold">
                             <a href="blog-detail.html" class="text-decoration-none text-dark stretched-link">Otomasi Industri dengan Deteksi Visual</a>
-                        </h5>
+                        </h2>
                         <p class="card-text text-muted">Pabrik modern memanfaatkan kamera AI.</p>
                     </div>
                 </div>
@@ -67,12 +70,12 @@
             <!-- Artikel 3 -->
             <div class="col-md-6 col-lg-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=600&q=80" class="card-img-top" alt="AI">
+                    <img src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=600&q=80" class="card-img-top" alt="Ilustrasi Etika AI">
                     <div class="card-body">
-                        <span class="badge text-bg-warning mb-2">Etika AI</span>
-                        <h5 class="card-title fw-bold">
+                        <span class="badge text-bg-warning text-dark mb-2">Etika AI</span>
+                        <h2 class="card-title h5 fw-bold">
                             <a href="blog-detail.html" class="text-decoration-none text-dark stretched-link">Menghindari Bias pada Algoritma</a>
-                        </h5>
+                        </h2>
                         <p class="card-text text-muted">Memastikan dataset bebas dari bias.</p>
                     </div>
                 </div>

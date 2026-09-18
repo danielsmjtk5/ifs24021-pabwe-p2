@@ -2,7 +2,8 @@
    TEMA & VARIABEL OMPUNGAI
    ========================================= */
 :root {
-    --brass: #b48c36;
+    /* Warna brass digelapkan sedikit agar lolos WCAG Contrast Ratio */
+    --brass: #8f6e27; 
     --teal: #14746f;
     --ink: #0f172a;
     --paper-white: #f8fafc;
@@ -32,7 +33,7 @@ ul { list-style: none; }
 .nav-links { display: flex; gap: 25px; align-items: center; }
 .nav-links a { font-weight: 600; font-size: 0.95rem; }
 .nav-links a:hover { color: var(--teal); }
-.nav-toggle { display: none; } /* Disembunyikan di desktop */
+.nav-toggle { display: none; }
 .skip-link { position: absolute; top: -40px; left: 0; background: var(--teal); color: white; padding: 8px; z-index: 100; }
 .skip-link:focus { top: 0; }
 
