@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Blog AI - NovaMind AI</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-primary">AI</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-semibold" aria-current="page" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV Penulis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- KONTEN ARTIKEL -->
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                
+                <!-- BREADCRUMB (Navigasi Jejak) -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="blog.html" class="text-decoration-none">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Generative AI</li>
+                    </ol>
+                </nav>
+
+                <!-- JUDUL & META INFO -->
+                <h1 class="fw-bold mb-3">Mengapa Large Language Models (LLM) Mengubah Cara Kerja Programmer?</h1>
+                
+                <div class="d-flex align-items-center mb-4 text-muted">
+                    <span class="me-3"><i class="bi bi-person-circle"></i> Ditulis oleh <strong>Budi Santoso</strong></span>
+                    <span class="me-3"><i class="bi bi-calendar-event"></i> 18 Sep 2026</span>
+                    <span class="badge text-bg-info text-white"><i class="bi bi-tags"></i> AI Tools</span>
+                </div>
+
+                <!-- COVER IMAGE (Lebar Penuh Kolom) -->
+                <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80" class="img-fluid rounded mb-4 w-100" alt="Generative AI Coding" style="max-height: 400px; object-fit: cover;">
+
+                <!-- ISI ARTIKEL -->
+                <div class="fs-5" style="line-height: 1.8;">
+                    <p>Kehadiran Generative AI seperti ChatGPT, GitHub Copilot, dan model bahasa raksasa (LLM) lainnya telah memicu revolusi dalam industri rekayasa perangkat lunak. Alih-alih menggantikan programmer, alat-alat ini justru bertindak sebagai asisten canggih yang membantu mempercepat proses penulisan kode sumber.</p>
+
+                    <p>Secara tradisional, seorang pengembang menghabiskan banyak waktu untuk mencari sintaks yang tepat, menelusuri forum StackOverflow, atau melakukan *debugging* untuk error yang membingungkan. Sekarang, dengan bantuan model AI generatif, programmer cukup memberikan instruksi *(prompt)* dalam bahasa manusia, dan AI akan menghasilkan draf kode yang siap digunakan.</p>
+                    
+                    <!-- ALERT BOOTSTRAP -->
+                    <div class="alert alert-primary d-flex align-items-center shadow-sm" role="alert">
+                        <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                        <div>
+                            <strong>Tahukah Anda?</strong> Survei tahun 2026 menunjukkan bahwa 75% programmer menggunakan AI untuk membantu mereka melakukan code-review dan mendeteksi celah keamanan (bug).
+                        </div>
+                    </div>
+
+                    <p>Namun, keterampilan baru kini dituntut dari seorang programmer: <strong>Prompt Engineering</strong>. Ini adalah kemampuan untuk memberikan perintah yang spesifik dan berkonteks agar AI menghasilkan kode yang efisien dan tidak halusinasi.</p>
+
+                    <!-- LIST TIPS -->
+                    <h4 class="fw-bold mt-5 mb-3">Tips Berkolaborasi dengan LLM:</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Berikan konteks proyek yang jelas sebelum meminta kode.</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Jangan percaya kode AI 100%, selalu lakukan pengujian mandiri.</li>
+                        <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i> Gunakan AI untuk menjelaskan *legacy code* (kode lawas) yang sulit dibaca.</li>
+                    </ul>
+
+                    <!-- KUTIPAN BLOCKQUOTE -->
+                    <figure class="bg-light p-4 rounded border-start border-5 border-primary my-4">
+                        <blockquote class="blockquote font-italic">
+                            <p>"AI tidak akan menggantikan programmer. Tapi programmer yang menggunakan AI akan menggantikan mereka yang tidak."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                            CEO NovaMind AI di <cite title="Tech Summit 2026">Tech Summit 2026</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <hr class="my-5">
+
+                <!-- AREA KOMENTAR -->
+                <h4 class="fw-bold mb-4">Tinggalkan Komentar</h4>
+                <div class="card bg-light border-0 shadow-sm mb-5">
+                    <div class="card-body p-4">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nama" class="form-label fw-bold">Nama Lengkap</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label fw-bold">Email</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                        <input type="email" class="form-control" id="email" placeholder="contoh@mail.com" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="komentar" class="form-label fw-bold">Komentar</label>
+                                <textarea class="form-control" id="komentar" rows="4" placeholder="Tulis pendapat Anda di sini..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="bi bi-send me-2"></i>Kirim Komentar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 NovaMind AI. Dibuat menggunakan Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
