@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OmpungAI - Solusi Artificial Intelligence</title>
-    
-    <!-- Google Fonts: Inter -->
+    <title>OmpungAI — Jasa Kecerdasan Buatan untuk Bisnis</title>
+    <meta name="description" content="OmpungAI mendampingi perusahaan mengadopsi teknologi AI secara matang dan tepercaya: chatbot, computer vision, otomasi proses, dan analitik prediktif.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+    <a class="skip-link" href="#konten">Langsung ke konten</a>
+
     <!-- HEADER & NAVBAR -->
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">OmpungAI <span>AI</span></a>
+            <a href="#beranda" class="logo">Ompung<span>AI</span></a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu navigasi">
+                <span></span><span></span><span></span>
+            </button>
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navLinks">
                     <li><a href="#layanan">Layanan</a></li>
                     <li><a href="#tentang">Tentang Kami</a></li>
                     <li><a href="#kontak">Kontak</a></li>
-                    <!-- Link ke halaman proyek lain sesuai instruksi -->
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="cv.html" class="btn-outline">CV Penulis</a></li>
                 </ul>
@@ -32,107 +37,204 @@
         </div>
     </header>
 
-    <main>
-        <!-- HERO SECTION -->
+    <main id="konten">
+        <!-- HERO -->
         <section class="hero" id="beranda">
-            <div class="container hero-content">
-                <h1>Transformasi Bisnis dengan Kekuatan <span class="highlight">Artificial Intelligence</span></h1>
-                <p>OpungAI membantu perusahaan Anda mengotomasi proses bisnis, memahami data, dan meningkatkan interaksi pelanggan melalui teknologi AI terdepan.</p>
-                <a href="#kontak" class="btn btn-primary">Konsultasi Gratis</a>
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="hero-kicker">Jasa Kecerdasan Buatan untuk Bisnis</p>
+                    <h1>Teknologi AI yang dipandu <em>kearifan</em>, dibangun untuk bisnis Anda</h1>
+                    <p class="hero-lede">OmpungAI mendampingi perusahaan mengotomasi proses, memahami data, dan mendekatkan pelanggan — dengan pendekatan yang matang dan tepercaya, bukan sekadar mengikuti tren.</p>
+                    <div class="hero-actions">
+                        <a href="#kontak" class="btn btn-primary">Konsultasi gratis</a>
+                        <a href="#layanan" class="btn btn-ghost">Lihat layanan kami</a>
+                    </div>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" class="weave-svg">
+                        <g class="weave-lines" stroke-width="1.6" fill="none" opacity="0.55">
+                            <path d="M0 60 L480 60" stroke="var(--brass)"/>
+                            <path d="M0 140 L480 140" stroke="var(--teal)"/>
+                            <path d="M0 220 L480 220" stroke="var(--brass)"/>
+                            <path d="M0 300 L480 300" stroke="var(--teal)"/>
+                            <path d="M0 380 L480 380" stroke="var(--brass)"/>
+                            <path d="M60 0 L60 480" stroke="var(--teal)"/>
+                            <path d="M150 0 L150 480" stroke="var(--brass)"/>
+                            <path d="M240 0 L240 480" stroke="var(--teal)"/>
+                            <path d="M330 0 L330 480" stroke="var(--brass)"/>
+                            <path d="M420 0 L420 480" stroke="var(--teal)"/>
+                        </g>
+                        <g class="weave-nodes" fill="var(--paper-white)">
+                            <circle cx="60" cy="60" r="5" stroke="var(--brass)" stroke-width="2"/>
+                            <circle cx="240" cy="140" r="7" stroke="var(--teal)" stroke-width="2"/>
+                            <circle cx="330" cy="220" r="5" stroke="var(--brass)" stroke-width="2"/>
+                            <circle cx="150" cy="300" r="6" stroke="var(--teal)" stroke-width="2"/>
+                            <circle cx="420" cy="380" r="5" stroke="var(--brass)" stroke-width="2"/>
+                            <circle cx="60" cy="380" r="5" stroke="var(--teal)" stroke-width="2"/>
+                            <circle cx="330" cy="60" r="5" stroke="var(--teal)" stroke-width="2"/>
+                        </g>
+                        <g class="weave-links" stroke="var(--brass)" stroke-width="1.2" opacity="0.8">
+                            <line x1="60" y1="60" x2="240" y2="140"/>
+                            <line x1="240" y1="140" x2="330" y2="220"/>
+                            <line x1="330" y1="220" x2="150" y2="300"/>
+                            <line x1="150" y1="300" x2="420" y2="380"/>
+                            <line x1="60" y1="380" x2="150" y2="300"/>
+                            <line x1="330" y1="60" x2="240" y2="140"/>
+                        </g>
+                    </svg>
+                </div>
             </div>
         </section>
 
-        <!-- LAYANAN SECTION (Menggunakan CSS Grid) -->
+        <!-- LAYANAN -->
         <section id="layanan" class="layanan section-padding">
             <div class="container">
-                <h2 class="section-title">Layanan AI Kami</h2>
-                <p class="section-subtitle">Solusi cerdas yang disesuaikan dengan kebutuhan industri Anda.</p>
-                
+                <div class="section-head">
+                    <h2>Layanan Kami</h2>
+                    <p>Solusi AI yang disesuaikan dengan alur kerja dan skala bisnis Anda — mulai dari eksplorasi awal hingga implementasi penuh.</p>
+                </div>
+
                 <div class="grid-layanan">
-                    <article class="card">
-                        <div class="card-icon">💬</div>
-                        <h3>Chatbot & Asisten Virtual</h3>
-                        <p>Tingkatkan pengalaman pelanggan 24/7 dengan chatbot cerdas berteknologi NLP yang mampu merespons layaknya manusia.</p>
+                    <article class="card card--brass">
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H16l-7 6v-6h-3a4 4 0 0 1-4-4V10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="14" cy="17" r="1.6" fill="currentColor"/><circle cx="20" cy="17" r="1.6" fill="currentColor"/><circle cx="26" cy="17" r="1.6" fill="currentColor"/></svg>
+                        <h3>Chatbot &amp; Asisten Virtual</h3>
+                        <p>Layani pelanggan 24 jam dengan asisten berbasis NLP yang merespons secara alami dan konsisten dengan suara merek Anda.</p>
                     </article>
 
-                    <article class="card">
-                        <div class="card-icon">👁️</div>
+                    <article class="card card--teal">
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 20c4-8 12-12 16-12s12 4 16 12c-4 8-12 12-16 12S8 28 4 20z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/></svg>
                         <h3>Computer Vision</h3>
-                        <p>Analisis gambar dan video secara real-time untuk inspeksi kualitas produksi, pengenalan wajah, hingga keamanan.</p>
+                        <p>Pantau kualitas produksi, kenali objek, dan tingkatkan keamanan lewat analisis gambar dan video secara real-time.</p>
                     </article>
 
-                    <article class="card">
-                        <div class="card-icon">⚙️</div>
-                        <h3>Otomasi Bisnis (RPA)</h3>
-                        <p>Hemat waktu dan biaya operasional dengan mengotomatisasi tugas-tugas repetitif menggunakan agen AI cerdas.</p>
+                    <article class="card card--brass">
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M9 9l3.5 3.5M27.5 27.5 31 31M31 9l-3.5 3.5M12.5 27.5 9 31" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        <h3>Otomasi Proses Bisnis</h3>
+                        <p>Bebaskan tim Anda dari tugas berulang. Agen AI kami menangani alur kerja operasional secara presisi dan aman.</p>
                     </article>
 
-                    <article class="card">
-                        <div class="card-icon">📊</div>
+                    <article class="card card--teal">
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 32V16M16 32V8M26 32v-9M34 32V13" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M6 14l10-8 10 6 8-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         <h3>Analitik Prediktif</h3>
-                        <p>Ubah data mentah menjadi wawasan bisnis. Prediksi tren pasar dan perilaku pelanggan untuk keputusan strategis.</p>
+                        <p>Ubah data mentah menjadi arah. Kami membantu memprediksi tren pasar dan perilaku pelanggan untuk keputusan yang lebih tajam.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- TENTANG / KEUNGGULAN SECTION (Menggunakan Flexbox) -->
+        <!-- TENTANG -->
         <section id="tentang" class="tentang section-padding">
-            <div class="container">
-                <div class="tentang-flex">
-                    <div class="tentang-text">
-                        <h2 class="section-title text-left">Mengapa Memilih OmpungAI ?</h2>
-                        <p>Sejak 2023, kami telah membantu puluhan startup dan perusahaan enterprise dalam mengadopsi teknologi kecerdasan buatan. Tim kami terdiri dari AI Engineer dan Data Scientist berpengalaman.</p>
-                        <ul class="keunggulan-list">
-                            <li>✔️ Model AI dikustomisasi sesuai kebutuhan bisnis</li>
-                            <li>✔️ Implementasi cepat dan aman</li>
-                            <li>✔️ Dukungan teknis & pemeliharaan berkala</li>
-                        </ul>
+            <div class="container tentang-flex">
+                <div class="tentang-text">
+                    <h2 class="text-left">Mengapa OmpungAI</h2>
+                    <p>Sejak 2023, kami mendampingi puluhan bisnis rintisan hingga perusahaan skala enterprise dalam mengadopsi teknologi AI — bukan sebagai proyek satu kali, tapi sebagai kemitraan jangka panjang.</p>
+
+                    <dl class="keunggulan-list">
+                        <div class="keunggulan-item">
+                            <dt>Kustom, bukan generik</dt>
+                            <dd>Model dilatih dan disesuaikan dengan data serta proses bisnis Anda sendiri.</dd>
+                        </div>
+                        <div class="keunggulan-item">
+                            <dt>Implementasi terukur</dt>
+                            <dd>Peluncuran bertahap dengan validasi di tiap tahap, bukan asal cepat.</dd>
+                        </div>
+                        <div class="keunggulan-item">
+                            <dt>Pendampingan berkelanjutan</dt>
+                            <dd>Dukungan teknis dan pemeliharaan berkala setelah sistem berjalan.</dd>
+                        </div>
+                    </dl>
+
+                    <div class="stats-row">
+                        <div class="stat"><span class="stat-num">2023</span><span class="stat-label">Tahun berdiri</span></div>
+                        <div class="stat"><span class="stat-num">40+</span><span class="stat-label">Proyek selesai</span></div>
+                        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Klien bermitra kembali</span></div>
                     </div>
-                    <div class="tentang-img">
-                        <!-- Menggunakan placeholder atau gambar dari URL publik -->
-                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Ilustrasi Teknologi AI">
-                    </div>
+                </div>
+
+                <div class="tentang-visual" aria-hidden="true">
+                    <svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="4" width="392" height="452" rx="18" fill="var(--ink)"/>
+                        <g stroke="var(--brass)" stroke-width="1" opacity="0.5">
+                            <path d="M40 90h320M40 150h320M40 210h320M40 270h320M40 330h320M40 390h320"/>
+                        </g>
+                        <g stroke="var(--teal)" stroke-width="1" opacity="0.5">
+                            <path d="M100 40v380M200 40v380M300 40v380"/>
+                        </g>
+                        <g>
+                            <circle cx="100" cy="90" r="6" fill="var(--brass)"/>
+                            <circle cx="200" cy="150" r="9" fill="var(--teal)"/>
+                            <circle cx="300" cy="210" r="6" fill="var(--brass)"/>
+                            <circle cx="100" cy="270" r="7" fill="var(--teal)"/>
+                            <circle cx="300" cy="330" r="6" fill="var(--brass)"/>
+                            <circle cx="200" cy="390" r="8" fill="var(--teal)"/>
+                        </g>
+                        <g stroke="var(--paper-white)" stroke-width="1.4" opacity="0.7">
+                            <line x1="100" y1="90" x2="200" y2="150"/>
+                            <line x1="200" y1="150" x2="300" y2="210"/>
+                            <line x1="300" y1="210" x2="100" y2="270"/>
+                            <line x1="100" y1="270" x2="300" y2="330"/>
+                            <line x1="300" y1="330" x2="200" y2="390"/>
+                        </g>
+                    </svg>
                 </div>
             </div>
         </section>
 
-        <!-- KONTAK / CALL TO ACTION -->
+        <!-- KONTAK -->
         <section id="kontak" class="kontak section-padding">
-            <div class="container">
-                <h2 class="section-title">Mulai Perjalanan AI Anda</h2>
-                <p class="section-subtitle">Hubungi kami untuk mendiskusikan bagaimana AI dapat menyelesaikan masalah bisnis Anda.</p>
-                
-                <div class="form-container">
-                    <form action="#" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Perusahaan</label>
-                            <input type="email" id="email" name="email" placeholder="email@perusahaan.com" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="pesan">Pesan / Kebutuhan</label>
-                            <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan singkat tentang masalah bisnis yang ingin diselesaikan..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
-                    </form>
+            <div class="container kontak-grid">
+                <div class="kontak-intro">
+                    <h2 class="text-left">Mulai perjalanan AI Anda</h2>
+                    <p>Ceritakan tantangan bisnis Anda. Kami akan menyusun rekomendasi awal tanpa biaya, biasanya dibalas dalam 1–2 hari kerja.</p>
                 </div>
+
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="nama">Nama lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email perusahaan</label>
+                        <input type="email" id="email" name="email" placeholder="email@perusahaan.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan / kebutuhan</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan singkat masalah bisnis yang ingin diselesaikan..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim pesan</button>
+                </form>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <h3>OmpungAI <span>AI</span></h3>
-                <p>&copy; 2026 OmpungAI. Hak Cipta Dilindungi.</p>
-            </div>
+        <div class="container footer-content">
+            <a href="#beranda" class="logo footer-logo">Ompung<span>AI</span></a>
+            <ul class="footer-links">
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cv.html">CV Penulis</a></li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 OmpungAI. Hak cipta dilindungi.</p>
         </div>
     </footer>
 
+    <script>
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', String(open));
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 </body>
 </html>
