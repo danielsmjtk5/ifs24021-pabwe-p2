@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmpungAI - Solusi Artificial Intelligence</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- HEADER & NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">OmpungAI <span>AI</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <!-- Link ke halaman proyek lain sesuai instruksi -->
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="cv.html" class="btn-outline">CV Penulis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="beranda">
+            <div class="container hero-content">
+                <h1>Transformasi Bisnis dengan Kekuatan <span class="highlight">Artificial Intelligence</span></h1>
+                <p>OpungAI membantu perusahaan Anda mengotomasi proses bisnis, memahami data, dan meningkatkan interaksi pelanggan melalui teknologi AI terdepan.</p>
+                <a href="#kontak" class="btn btn-primary">Konsultasi Gratis</a>
+            </div>
+        </section>
+
+        <!-- LAYANAN SECTION (Menggunakan CSS Grid) -->
+        <section id="layanan" class="layanan section-padding">
+            <div class="container">
+                <h2 class="section-title">Layanan AI Kami</h2>
+                <p class="section-subtitle">Solusi cerdas yang disesuaikan dengan kebutuhan industri Anda.</p>
+                
+                <div class="grid-layanan">
+                    <article class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>Chatbot & Asisten Virtual</h3>
+                        <p>Tingkatkan pengalaman pelanggan 24/7 dengan chatbot cerdas berteknologi NLP yang mampu merespons layaknya manusia.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">👁️</div>
+                        <h3>Computer Vision</h3>
+                        <p>Analisis gambar dan video secara real-time untuk inspeksi kualitas produksi, pengenalan wajah, hingga keamanan.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">⚙️</div>
+                        <h3>Otomasi Bisnis (RPA)</h3>
+                        <p>Hemat waktu dan biaya operasional dengan mengotomatisasi tugas-tugas repetitif menggunakan agen AI cerdas.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Analitik Prediktif</h3>
+                        <p>Ubah data mentah menjadi wawasan bisnis. Prediksi tren pasar dan perilaku pelanggan untuk keputusan strategis.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG / KEUNGGULAN SECTION (Menggunakan Flexbox) -->
+        <section id="tentang" class="tentang section-padding">
+            <div class="container">
+                <div class="tentang-flex">
+                    <div class="tentang-text">
+                        <h2 class="section-title text-left">Mengapa Memilih OmpungAI ?</h2>
+                        <p>Sejak 2023, kami telah membantu puluhan startup dan perusahaan enterprise dalam mengadopsi teknologi kecerdasan buatan. Tim kami terdiri dari AI Engineer dan Data Scientist berpengalaman.</p>
+                        <ul class="keunggulan-list">
+                            <li>✔️ Model AI dikustomisasi sesuai kebutuhan bisnis</li>
+                            <li>✔️ Implementasi cepat dan aman</li>
+                            <li>✔️ Dukungan teknis & pemeliharaan berkala</li>
+                        </ul>
+                    </div>
+                    <div class="tentang-img">
+                        <!-- Menggunakan placeholder atau gambar dari URL publik -->
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" alt="Ilustrasi Teknologi AI">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK / CALL TO ACTION -->
+        <section id="kontak" class="kontak section-padding">
+            <div class="container">
+                <h2 class="section-title">Mulai Perjalanan AI Anda</h2>
+                <p class="section-subtitle">Hubungi kami untuk mendiskusikan bagaimana AI dapat menyelesaikan masalah bisnis Anda.</p>
+                
+                <div class="form-container">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Perusahaan</label>
+                            <input type="email" id="email" name="email" placeholder="email@perusahaan.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan / Kebutuhan</label>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan singkat tentang masalah bisnis yang ingin diselesaikan..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3>OmpungAI <span>AI</span></h3>
+                <p>&copy; 2026 OmpungAI. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
