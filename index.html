@@ -12,15 +12,16 @@
 </head>
 <body>
 
+    <!-- HEADER / NAVIGASI -->
     <header class="header">
         <div class="container header-container">
             <a href="index.html" class="logo">Ompung<span>AI</span></a>
-            <nav>
+            <nav aria-label="Navigasi Utama">
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#layanan">Layanan</a></li>
                     <li><a href="#tentang">Tentang Kami</a></li>
                     <li><a href="#kontak">Kontak</a></li>
-                    <!-- Link ke halaman lain -->
+                    <!-- Tautan antar Halaman -->
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="cv.html" class="btn-outline">CV Penulis</a></li>
                 </ul>
@@ -28,7 +29,10 @@
         </div>
     </header>
 
+    <!-- KONTEN UTAMA -->
     <main id="konten">
+        
+        <!-- BAGIAN HERO -->
         <section class="hero" id="beranda">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -40,7 +44,8 @@
                         <a href="#layanan" class="btn btn-ghost">Lihat layanan</a>
                     </div>
                 </div>
-                <div class="hero-visual">
+                <!-- Visual SVG -->
+                <div class="hero-visual" aria-hidden="true">
                     <svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" class="weave-svg">
                         <g class="weave-lines" stroke-width="1.6" fill="none" opacity="0.55">
                             <path d="M0 60 L480 60" stroke="var(--brass)"/><path d="M0 140 L480 140" stroke="var(--teal)"/><path d="M0 220 L480 220" stroke="var(--brass)"/><path d="M0 300 L480 300" stroke="var(--teal)"/><path d="M0 380 L480 380" stroke="var(--brass)"/><path d="M60 0 L60 480" stroke="var(--teal)"/><path d="M150 0 L150 480" stroke="var(--brass)"/><path d="M240 0 L240 480" stroke="var(--teal)"/><path d="M330 0 L330 480" stroke="var(--brass)"/><path d="M420 0 L420 480" stroke="var(--teal)"/>
@@ -53,30 +58,33 @@
             </div>
         </section>
 
+        <!-- BAGIAN LAYANAN -->
         <section id="layanan" class="layanan section-padding">
             <div class="container">
-                <div class="section-head">
+                <header class="section-head">
                     <h2>Layanan Kami</h2>
                     <p>Solusi AI yang disesuaikan dengan alur kerja dan skala bisnis Anda.</p>
-                </div>
+                </header>
+                
                 <div class="grid-layanan">
+                    <!-- Kartu Menggunakan Semantik Article -->
                     <article class="card card--brass">
-                        <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M6 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H16l-7 6v-6h-3a4 4 0 0 1-4-4V10z" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="17" r="1.6" fill="currentColor"/><circle cx="20" cy="17" r="1.6" fill="currentColor"/><circle cx="26" cy="17" r="1.6" fill="currentColor"/></svg>
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H16l-7 6v-6h-3a4 4 0 0 1-4-4V10z" stroke="currentColor" stroke-width="2"/><circle cx="14" cy="17" r="1.6" fill="currentColor"/><circle cx="20" cy="17" r="1.6" fill="currentColor"/><circle cx="26" cy="17" r="1.6" fill="currentColor"/></svg>
                         <h3>Chatbot &amp; Asisten</h3>
                         <p>Layani pelanggan 24 jam dengan asisten NLP.</p>
                     </article>
                     <article class="card card--teal">
-                        <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M4 20c4-8 12-12 16-12s12 4 16 12c-4 8-12 12-16 12S8 28 4 20z" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/></svg>
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M4 20c4-8 12-12 16-12s12 4 16 12c-4 8-12 12-16 12S8 28 4 20z" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/></svg>
                         <h3>Computer Vision</h3>
                         <p>Pantau kualitas produksi dengan analisis gambar.</p>
                     </article>
                     <article class="card card--brass">
-                        <svg class="card-icon" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M9 9l3.5 3.5M27.5 27.5 31 31M31 9l-3.5 3.5M12.5 27.5 9 31" stroke="currentColor" stroke-width="2"/></svg>
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="2"/><path d="M20 4v5M20 31v5M4 20h5M31 20h5M9 9l3.5 3.5M27.5 27.5 31 31M31 9l-3.5 3.5M12.5 27.5 9 31" stroke="currentColor" stroke-width="2"/></svg>
                         <h3>Otomasi Bisnis</h3>
                         <p>Bebaskan tim dari tugas berulang operasional.</p>
                     </article>
                     <article class="card card--teal">
-                        <svg class="card-icon" viewBox="0 0 40 40" fill="none"><path d="M6 32V16M16 32V8M26 32v-9M34 32V13" stroke="currentColor" stroke-width="2.4"/><path d="M6 14l10-8 10 6 8-7" stroke="currentColor" stroke-width="2"/></svg>
+                        <svg class="card-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 32V16M16 32V8M26 32v-9M34 32V13" stroke="currentColor" stroke-width="2.4"/><path d="M6 14l10-8 10 6 8-7" stroke="currentColor" stroke-width="2"/></svg>
                         <h3>Analitik Prediktif</h3>
                         <p>Ubah data mentah menjadi keputusan strategi.</p>
                     </article>
@@ -84,6 +92,7 @@
             </div>
         </section>
 
+        <!-- BAGIAN TENTANG -->
         <section id="tentang" class="tentang section-padding">
             <div class="container tentang-flex">
                 <div class="tentang-text">
@@ -98,7 +107,7 @@
                         <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Bermitra kembali</span></div>
                     </div>
                 </div>
-                <div class="tentang-visual">
+                <div class="tentang-visual" aria-hidden="true">
                     <svg viewBox="0 0 400 460" xmlns="http://www.w3.org/2000/svg">
                         <rect x="4" y="4" width="392" height="452" rx="18" fill="var(--ink)"/>
                         <g stroke="var(--brass)" stroke-width="1" opacity="0.5"><path d="M40 90h320M40 150h320M40 210h320M40 270h320M40 330h320M40 390h320"/></g>
@@ -109,6 +118,7 @@
             </div>
         </section>
 
+        <!-- BAGIAN KONTAK -->
         <section id="kontak" class="kontak section-padding">
             <div class="container kontak-grid">
                 <div class="kontak-intro">
@@ -116,15 +126,16 @@
                     <p>Ceritakan tantangan bisnis Anda. Kami akan membalas dalam 1–2 hari kerja.</p>
                 </div>
                 <form action="#" method="POST" class="contact-form">
-                    <div class="form-group"><input type="text" placeholder="Nama Anda" required></div>
-                    <div class="form-group"><input type="email" placeholder="email@perusahaan.com" required></div>
-                    <div class="form-group"><textarea rows="4" placeholder="Kebutuhan Anda..." required></textarea></div>
+                    <div class="form-group"><input type="text" placeholder="Nama Anda" aria-label="Nama" required></div>
+                    <div class="form-group"><input type="email" placeholder="email@perusahaan.com" aria-label="Email" required></div>
+                    <div class="form-group"><textarea rows="4" placeholder="Kebutuhan Anda..." aria-label="Pesan" required></textarea></div>
                     <button type="submit" class="btn btn-primary btn-block">Kirim pesan</button>
                 </form>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <a href="#beranda" class="logo footer-logo">Ompung<span>AI</span></a>

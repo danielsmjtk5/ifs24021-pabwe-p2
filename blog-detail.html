@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Blog AI - OmpungAI</title>
+    <!-- Bootstrap 5 CSS & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-success">AI</span></a>
-            <!-- Ditambahkan aria-label -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Buka menu navigasi">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link active fw-semibold" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">CV Penulis</a></li>
-                </ul>
+    <!-- NAVIGASI -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Ompung<span class="text-success">AI</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Buka menu navigasi">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV Penulis</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
+    <!-- KONTEN UTAMA -->
     <main class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-lg-8">
+            
+            <!-- ARTIKEL SEMANTIK -->
+            <article class="col-lg-8">
                 
+                <!-- BREADCRUMB -->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="blog.html" class="text-decoration-none text-success">Blog</a></li>
@@ -37,16 +44,19 @@
                     </ol>
                 </nav>
 
-                <h1 class="fw-bold mb-3">Mengapa Large Language Models (LLM) Mengubah Cara Kerja Programmer?</h1> 
-                
-                <div class="d-flex align-items-center mb-4 text-muted">
-                    <span class="me-3"><i class="bi bi-person-circle"></i> Budi Santoso</span>
-                    <span class="me-3"><i class="bi bi-calendar-event"></i> 18 Sep 2026</span>
-                </div>
+                <!-- HEADER ARTIKEL -->
+                <header class="mb-4">
+                    <h1 class="fw-bold mb-3">Mengapa Large Language Models (LLM) Mengubah Cara Kerja Programmer?</h1> 
+                    <div class="d-flex align-items-center text-muted">
+                        <span class="me-3"><i class="bi bi-person-circle"></i> Budi Santoso</span>
+                        <span class="me-3"><i class="bi bi-calendar-event"></i> 18 Sep 2026</span>
+                    </div>
+                </header>
 
                 <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80" class="img-fluid rounded mb-4 w-100" alt="Generative AI Coding" style="max-height: 400px; object-fit: cover;">
 
-                <div class="fs-5" style="line-height: 1.8;">
+                <!-- ISI KONTEN -->
+                <section class="fs-5" style="line-height: 1.8;">
                     <p>Kehadiran Generative AI seperti ChatGPT, GitHub Copilot, dan model bahasa raksasa (LLM) lainnya telah memicu revolusi dalam industri rekayasa perangkat lunak. Alih-alih menggantikan programmer, alat-alat ini justru bertindak sebagai asisten canggih yang membantu mempercepat proses penulisan kode sumber.</p>
                     <p>Secara tradisional, seorang pengembang menghabiskan banyak waktu untuk mencari sintaks yang tepat. Sekarang, dengan bantuan model AI generatif, programmer cukup memberikan instruksi dalam bahasa manusia, dan AI akan menghasilkan draf kode yang siap digunakan.</p>
                     
@@ -55,15 +65,16 @@
                         <div><strong>Tahukah Anda?</strong> Survei tahun 2026 menunjukkan bahwa 75% programmer menggunakan AI untuk membantu mendeteksi celah keamanan.</div>
                     </div>
 
-                    <p>Namun, keterampilan baru kini dituntut: <strong>Prompt Engineering</strong>. Ini adalah kemampuan memberikan perintah berkonteks agar AI menghasilkan kode efisien.</p>
-                </div>
+                    <p>Namun, keterampilan baru kini dituntut: <strong>Prompt Engineering</strong>. Ini adalah kemampuan memberikan perintah berkonteks agar AI menghasilkan kode efisien dan terhindar dari bias.</p>
+                </section>
 
-            </div>
+            </article>
         </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; 2026 OmpungAI.</p>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 OmpungAI. Dibuat dengan Bootstrap 5.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
